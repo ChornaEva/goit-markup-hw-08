@@ -1,0 +1,108 @@
+.header .container {
+  background-color: #ffffff;
+
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  &__list {
+    display: flex;
+    margin-left: 93px;
+    justify-content: space-between;
+  }
+  &__link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &--current {
+      position: relative;
+      color: var(--accent-color);
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+
+        width: 100%;
+        height: 4px;
+
+        background: var(--accent-color);
+        border-radius: 2px;
+
+        bottom: 0;
+      }
+    }
+  }
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.contacts-list {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  margin-left: auto;
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+
+    color: #757575;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      .icon-envelope,
+      .icon-envelope,
+      .icon-phone,
+      .icon-phone {
+        fill: var(--accent-color);
+      }
+    }
+  }
+}
+
+.icon-envelope,
+.icon-phone {
+  margin-right: 10px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-envelope:hover,
+.icon-envelope:focus {
+  fill: var(--accent-color);
+}
+
+.icon-phone:hover,
+.icon-phone:focus {
+  fill: var(--accent-color);
+}
