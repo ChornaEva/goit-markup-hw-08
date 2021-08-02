@@ -28,9 +28,10 @@
                         </li>
                     </ul>
                 </nav>
-                <button type="button" class="mobile-menu__button">
+                <button type="button" class="mobile-menu__button" data-menu-button aria-expended="false">
                     <svg class="mobile-menu__icon" width="40px" height="40px">
-                        <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
+                        <use class="mobile-menu__open" href="./images/svg/symbol-defs.svg#icon-burger"></use>
+                        <use class="mobile-menu__close" href="./images/svg/symbol-defs.svg#icon-close"></use>
                     </svg>
                 </button>
                 <ul class="contacts-list list">
@@ -52,6 +53,23 @@
                     </li>
                 </ul>
             </div>
+            <!-- <div class="mobile-menu" data-menu>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div> -->
         </header>
 
     <!-- тело страницы -->
@@ -335,14 +353,15 @@
             </section>
         </main>
     <!-- футер -->
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="container">
-                <a class="footer__logo logo" lang="en" href="./index.html">Web<span class="logo--white">Studio</span></a>
-                <div class="footer-contacts">
-                    <address>
+                <div class="footer-address">
+                    <a class="footer__logo logo" lang="en" href="./index.html">Web<span class="logo--white">Studio</span></a>
+                    <address class="footer-address__list">
                         <ul class="footer-contacts list">
                             <li class="footer-contacts__item">
-                                <a class="footer-contacts__adress" href="https://goo.gl/maps/Vb78Npx7TWDgtV2aA" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
+                                <a class="footer-contacts__adress" href="https://goo.gl/maps/Vb78Npx7TWDgtV2aA" target="_blank"
+                                    rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
                             </li>
                             <li class="footer-contacts__item">
                                 <a class="footer-contacts__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -388,10 +407,10 @@
                 </div>
                 <div class="subscription">
                     <h2 class="subscription__title title">Подпишитесь на рассылку</h2>
-                    <form name="subscription__form">
+                    <form name="subscription__form" class="subscription__form">
                         <label for="email">
-                            <input class="footer__input" type="email" name="email" id="email" placeholder="E-mail"/>
-                        </label>                                        
+                            <input class="footer__input" type="email" name="email" id="email" placeholder="E-mail" />
+                        </label>
                         <button class="footer__button" type="submit">Подписаться
                             <svg class="icon-submit" width="24px" height="24px">
                                 <use href="./images/svg/symbol-defs.svg#icon-send"></use>
@@ -400,7 +419,7 @@
                     </form>
                 </div>
             </div>
-        </footer> -->
+        </footer>
         <!-- Модальное окно -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
@@ -456,5 +475,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>

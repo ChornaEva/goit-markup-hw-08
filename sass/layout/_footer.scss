@@ -4,15 +4,29 @@
   padding: 60px 0px;
 
   .container {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+
+    @media screen and(min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+
+    @media screen and(min-width:1200px) {
+      display: flex;
+      align-items: baseline;
+      text-align: left;
+    }
   }
   &__logo {
-    display: inline-block;
-    margin-bottom: 20px;
+    @media screen and(min-width:1200px) {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
   }
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
 
     background-color: transparent;
@@ -25,6 +39,9 @@
     outline: none;
 
     color: #ffffff;
+    @media screen and(min-width:768px) {
+      width: 358px;
+    }
 
     &:focus {
       border-color: var(--accent-color);
@@ -66,6 +83,13 @@
   }
 }
 
+.footer-address__list {
+  margin-top: 20px;
+
+  @media screen and(min-width:1200px) {
+    margin-top: 0;
+  }
+}
 .footer-contacts {
   &__item:not(:last-child) {
     margin-bottom: 9px;
@@ -98,7 +122,11 @@
 }
 
 .footer-sociale {
-  margin-left: 70px;
+  justify-content: center;
+
+  @media screen and(min-width:1200px) {
+    margin-left: 70px;
+  }
 
   &__title {
     font-size: 14px;
@@ -107,11 +135,24 @@
     color: #ffffff;
 
     margin-bottom: 20px;
+    margin-top: 60px;
+
+    @media screen and(min-width:768px) {
+      margin-top: 0;
+    }
+  }
+  .sociale-list {
+    justify-content: center;
   }
 }
 
 .subscription {
-  margin-left: 93px;
+  margin-top: 60px;
+
+  @media screen and(min-width:1200px) {
+    margin-top: 0;
+    margin-left: 93px;
+  }
 
   &__title {
     font-size: 14px;
@@ -121,8 +162,21 @@
 
     margin-bottom: 20px;
   }
+  &__form {
+    @media screen and(min-width: 768px) and(max-width:1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
+.footer__button {
+  margin-top: 20px;
+  @media screen and(min-width:1200px) {
+    margin-top: 0;
+  }
+}
 .icon-submit {
   margin-left: 10px;
 }

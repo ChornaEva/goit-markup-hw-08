@@ -14,8 +14,8 @@
             <!-- шапка страницы -->
             <header class="header portfolio">
                 <div class="container">
+                    <a class="logo" lang="en" href="./index.html"> Web<span class="logo--black">Studio</span></a>
                     <nav class="nav">
-                        <a class="logo" lang="en" href="./index.html"> Web<span class="logo--black">Studio</span></a>
                         <ul class="nav__list list">
                             <li class="nav__item">
                                 <a class="nav__link" href="./index.html">Студия</a>
@@ -28,8 +28,13 @@
                             </li>
                         </ul>
                     </nav>
+                    <button type="button" class="mobile-menu__button">
+                        <svg class="mobile-menu__icon" width="40px" height="40px">
+                            <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
+                        </svg>
+                    </button>
                     <ul class="contacts-list list">
-                        <li class="contacts-list__item mail">
+                        <li class="contacts-list__item">
                             <a class="contacts-list__link" href="mailto:info@devstudio.com">
                                 <svg class="icon-envelope" width="16px" height="12px">
                                     <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
@@ -37,7 +42,7 @@
                                 info@devstudio.com
                             </a>
                         </li>
-                        <li class="contacts-list__item header-phone tel">
+                        <li class="contacts-list__item">
                             <a class="contacts-list__link" href="tel:+380961111111">
                                 <svg class="icon-phone" width="10px" height="16px">
                                     <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
@@ -186,9 +191,9 @@
             <!-- футер -->
             <footer class="footer">
                 <div class="container">
-                    <div>
+                    <div class="footer-address">
                         <a class="footer__logo logo" lang="en" href="./index.html">Web<span class="logo--white">Studio</span></a>
-                        <address>
+                        <address class="footer-address__list">
                             <ul class="footer-contacts list">
                                 <li class="footer-contacts__item">
                                     <a class="footer-contacts__adress" href="https://goo.gl/maps/Vb78Npx7TWDgtV2aA" target="_blank"
@@ -238,12 +243,12 @@
                     </div>
                     <div class="subscription">
                         <h2 class="subscription__title title">Подпишитесь на рассылку</h2>
-                        <form name="subscription__form">
+                        <form name="subscription__form" class="subscription__form">
                             <label for="email">
-                                <input class="footer__input" type="email" name="email" placeholder="E-mail" />
+                                <input class="footer__input" type="email" name="email" id="email" placeholder="E-mail" />
                             </label>
                             <button class="footer__button" type="submit">Подписаться
-                                <svg class="icon-submit width=" 24px" height="24px">
+                                <svg class="icon-submit" width="24px" height="24px">
                                     <use href="./images/svg/symbol-defs.svg#icon-send"></use>
                                 </svg>
                             </button>
