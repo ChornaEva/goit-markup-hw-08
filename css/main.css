@@ -697,35 +697,35 @@ img {
   }
 }
 
+@media screen and (min-width: 481px) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero-tablet.webp);
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero-tablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero-tablet@2x.webp);
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .banner {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/header-tablet.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/heder-tablet.webp);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .banner {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/header-tablet@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/header-tablet@2x.webp);
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .banner {
     max-width: 1600px;
     padding: 200px 0px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/header-desk.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/header-desk.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/hero-desk.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/hero-desk.webp);
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/header-desk@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/header-desk@2x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/hero-desk@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/hero-desk@2x.webp);
   }
 }
 
@@ -860,6 +860,7 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -892,7 +893,6 @@ img {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1116,6 +1116,7 @@ img {
 
 .footer-sociale {
   justify-content: center;
+  margin-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1130,7 +1131,6 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1246,18 +1246,17 @@ img {
 
 .type-list {
   display: block;
-  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
   .type-list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 .type-list__item {
-  margin-top: 30px;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
